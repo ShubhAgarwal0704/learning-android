@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:srcCompat="@tools:sample/avatars"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:layout_margin="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shubh Agarwal"
+        android:textSize="50dp"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Animation.Design.BottomSheetDialog">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:text="[Your Full Name] is a passionate and driven developer with a strong interest in innovation and problem-solving. With [number] years of experience in [relevant programming languages or technologies], [he/she/they] has worked on a variety of projects ranging from [specific project examples].
+
+[Your First Name]'s skills include [relevant skills, such as coding, design, or project management], and [he/she/they] is always eager to learn new technologies and techniques to enhance [his/her/their] abilities. [He/She/They] is excited to participate in this hackathon to collaborate with other talented developers, tackle complex challenges, and build innovative solutions.
+
+In [his/her/their] free time, [Your First Name] enjoys [hobbies or interests relevant to your field], as well as [other interests or activities]. [He/She/They] is committed to making a positive impact in the tech community and beyond, and is eager to contribute to this hackathon's mission"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
+</LinearLayout>
